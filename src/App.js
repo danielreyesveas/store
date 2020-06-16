@@ -10,6 +10,7 @@ import CheckoutPage from './pages/checkout/checkout.component';
 
 import { toggleCartHidden } from './redux/cart/cart.actions.js';
 import { selectCurrentUser } from './redux/user/user.selectors';
+import { checkUserSession } from './redux/user/user.actions';
 
 import Header from './components/header/header.component';
 
@@ -20,7 +21,11 @@ class App extends Component {
   unsubscribeFromAuth = null;
 
   componentDidMount() {
+    const { checkUserSession } = this.props;
+    
     toggleCartHidden();
+
+    checkUserSession();
   }
 
   componentWillUnmount() {
@@ -75,6 +80,11 @@ const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser
 });
 
+const mapDispatchToProps = dispatch => ({
+  checkUserSession: () => dispatch(checkUserSession())
+});
+
 export default connect(
-  mapStateToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(App);
