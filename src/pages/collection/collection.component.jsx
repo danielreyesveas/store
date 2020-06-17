@@ -11,7 +11,9 @@ import {
   } from './collection.styles';
 
 const CollectionPage = ({ collection }) => {
+
     const { title, items } = collection;
+
     return (
         <CollectionPageContainer>
             <CollectionTitle>{title}</CollectionTitle>
