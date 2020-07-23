@@ -14,7 +14,7 @@ import { checkUserSession } from './redux/user/user.actions';
 
 import Header from './components/header/header.component';
 
-import './App.css';
+import { GlobalStyle } from './global.styles'
 
 const App = ({ checkUserSession, currentUser }) => {  
 
@@ -27,6 +27,8 @@ const App = ({ checkUserSession, currentUser }) => {
 
   return (
     <div>
+      
+      <GlobalStyle />
       
       <Header />
       
