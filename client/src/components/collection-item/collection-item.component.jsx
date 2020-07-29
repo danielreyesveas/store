@@ -9,14 +9,46 @@ import {
   AddButton,
   BackgroundImage,
   NameContainer,
-  PriceContainer
+  PriceContainer,
+
+  ProductContainer,
+  ImageContainer,
+  Image,
+  Extra,
+  Content,
+  Title,
+  Price
 } from './collection-item.styles';
 
 const CollectionItem = ({ item, addItem }) => {
   const { name, price, imageUrl } = item;
 
   return (
-    <CollectionItemContainer>
+    <ProductContainer className='product'>
+      <ImageContainer>
+        <Image src={imageUrl} alt={name} />    
+      </ImageContainer>
+      <Extra>
+        <a href="/">New</a>
+      </Extra>
+      <Content>
+         <Title>
+           <a href="/" className="name">{ name }</a>
+          </Title>
+         <Price className="price">{price}</Price>
+       </Content>
+    </ProductContainer>
+    // <div className="product">
+    //   <div className="product_image"><img src="images/product_1.jpg" alt="" /></div>
+    //   <div className="product_extra product_new"><a href="categories.html">New</a></div>
+    //   <div className="product_content">
+    //     <div className="product_title"><a href="product.html">Smart Phone</a></div>
+    //     <div className="product_price">$670</div>
+    //   </div>
+    // </div>
+    
+    
+    /* <CollectionItemContainer>
       <BackgroundImage className='image' imageUrl={imageUrl} />
       <CollectionFooterContainer>
         <NameContainer>{name}</NameContainer>
@@ -25,7 +57,7 @@ const CollectionItem = ({ item, addItem }) => {
       <AddButton onClick={() => addItem(item)} inverted>
         Add to cart
       </AddButton>
-    </CollectionItemContainer>
+    </CollectionItemContainer> */
   );
 };
 

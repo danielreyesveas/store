@@ -13,7 +13,7 @@ import { selectCurrentUser } from './redux/user/user.selectors';
 import { checkUserSession } from './redux/user/user.actions';
 
 import Header from './components/header/header.component';
-
+  
 import { GlobalStyle } from './global.styles'
 
 const App = ({ checkUserSession, currentUser }) => {  

@@ -1,36 +1,39 @@
 const INITIAL_STATE = {
     sections: [
         {
-            title: 'hats',
-            imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+            title: 'Pocket Operators',
+            route: 'po',
+            imageUrl: 'images/nicolas-nowak-pocket-operators.jpg',
             id: 1,
-            linkUrl: 'shop/hats'
+            linkUrl: 'shop/po'
         },
         {
-            title: 'jackets',
-            imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+            title: 'Synths',
+            route: 'synths',
+            imageUrl: 'images/synth.jpg',
             id: 2,
-            linkUrl: 'shop/jackets'
+            linkUrl: 'shop/synths'
         },
         {
-            title: 'sneakers',
-            imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
-            id: 3,
-            linkUrl: 'shop/sneakers'
+            title: 'Pocket Operators',
+            route: 'po',
+            imageUrl: 'images/nicolas-nowak-pocket-operators.jpg',
+            id: 1,
+            linkUrl: 'shop/po'
         },
         {
-            title: 'women',
-            imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-            size: 'large',
-            id: 4,
-            linkUrl: 'shop/women'
+            title: 'Synths',
+            route: 'synths',
+            imageUrl: 'images/synth.jpg',
+            id: 2,
+            linkUrl: 'shop/synths'
         },
         {
-            title: 'men',
-            imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-            size: 'large',
-            id: 5,
-            linkUrl: 'shop/men'
+            title: 'Pocket Operators',
+            route: 'po',
+            imageUrl: 'images/nicolas-nowak-pocket-operators.jpg',
+            id: 1,
+            linkUrl: 'shop/po'
         }
     ]
 };
